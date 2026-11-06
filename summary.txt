@@ -1,0 +1,21 @@
+ENSS simulation   B_H=6.0 mT  S0=1.0  quick=False
+undriven f0 of this model = 0.1629 Hz   (paper: 0.1607 Hz; F0 used = 0.162933)
+fig1 done (45s): plateaus at f_exp/f_m = 1/2, 2/3, 3/4, 4/5 with jets between
+fig2 done (65s)
+fig3 done (300s): tongues widen with eps; irregular fan at 0.55; oscillation quenched at 0.7
+Largest Lyapunov exponent (1/s):
+  eps=0.5   max lambda = +0.0021 at f0/fm = 0.973; 0 of 200 points above 0.01
+  eps=0.52  max lambda = +0.0080 at f0/fm = 0.891; 0 of 200 points above 0.01
+  eps=0.55  max lambda = +0.0360 at f0/fm = 0.893; 58 of 200 points above 0.01
+  eps=0.58  max lambda = +0.0271 at f0/fm = 0.761; 13 of 200 points above 0.01
+fig4 done (349s). lambda ~ 0.002 or less means 'no chaos' (finite-time noise).
+Robustness of lambda at eps=0.55 (points f0/fm = [0.893, 0.897, 0.889]):
+  dt=0.02, d0=1e-06:  lambda = [0.0314, -0.0041, -0.0]
+  dt=0.01, d0=1e-07:  lambda = [0.0265, 0.0271, -0.0011]
+  (18275s) stable sign and size => not a numerical artifact
+Correlation dimension D2 at eps=0.55 (embedding m = 2..8, tau = 1.2 s):
+  locked 1/2 (f0/fm=0.54)            [1.03, 1.02, 1.02, 1.02, 1.03, 1.02, 1.03]
+  unlocked, lambda~0 (f0/fm=0.62)    [1.4, 1.31, 1.23, 1.22, 1.2, 1.19, 1.19]
+  chaotic (f0/fm=0.893)              [1.73, 1.97, 2.02, 2.02, 2.02, 2.02, 2.03]
+  Note: fixed fitting window; unreliable for the unlocked/quasi-periodic case.
+fig5 done (39s)
